@@ -1,4 +1,13 @@
 version: '3.8'
 
 networks:
-    
+  frontend:
+    driver: ${NETWORKS_DRIVER}
+  backend:
+    driver: ${NETWORKS_DRIVER}
+
+volumes:
+  docker-in-docker:
+    driver: ${VOLUMES_DRIVER}
+
+services:
